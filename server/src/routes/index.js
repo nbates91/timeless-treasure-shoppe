@@ -9,14 +9,14 @@ import newItemsRouter from './newitems';
 
 let router = Router();
 
-router.use('/auth', authRouter);
-router.use('/donate', stripeDonationsRouter);
+// router.use('/auth', authRouter);
+// router.use('/donate', stripeDonationsRouter);
 
-router
-	.route('*')
-	.post(tokenMiddleware, isLoggedIn)
-	.put(tokenMiddleware, isLoggedIn)
-	.delete(tokenMiddleware, isLoggedIn);
+// router
+// 	.route('*')
+// 	.post(tokenMiddleware, isLoggedIn)
+// 	.put(tokenMiddleware, isLoggedIn)
+// 	.delete(tokenMiddleware, isLoggedIn);
 
 router.use('/newitems', newItemsRouter);
 router.use('/classes', classesRouter);
