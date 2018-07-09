@@ -5,7 +5,7 @@ let pool = mysql.createPool({
 	connectionLimit: 10,
 	host: config.DB_HOST,
 	user: config.DB_USER,
-	password: config.DB_PASSWORD,
+	password: config.DB_PASS,
 	database: config.DB_NAME,
 });
 

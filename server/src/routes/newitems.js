@@ -3,7 +3,7 @@ import Table from '../table';
 
 let router = Router();
 
-let tableName = new Table('newItems');
+let tableName = new Table('new_items');
 
 router.get('/', (req, res) => {
 	tableName
